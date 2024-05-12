@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="3">
+  <test  name="TestDemo">
+	  
+	  <parameter name="browserName" value="chromeSaucelabs"></parameter>
+    <classes>
+		
+      <class name="selenium_interviewprep.CrossBrowserTesting"/>
+    </classes>
+  </test> <!-- TestDemo -->
+  
+   <test  name="TestDemo1">
+	  
+	  <parameter name="browserName" value="firefox"></parameter>
+    <classes>
+		
+      <class name="selenium_interviewprep.CrossBrowserTesting"/>
+    </classes>
+  </test> <!-- TestDemo -->
+</suite> <!-- Suite -->
